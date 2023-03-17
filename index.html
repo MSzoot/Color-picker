@@ -8,7 +8,9 @@
     <title>Color picker</title>
   </head>
   <body>
-    <div class="w-[550px] h-[550px] bg-slate-200 mx-auto mt-56">
+    <div
+      class="w-[550px] h-[550px] mx-auto mt-56"
+    >
       <div class="h-[90px] w-[550px] grid">
         <form
           id="color-picker"
@@ -18,12 +20,12 @@
             type="color"
             id="choosen-color"
             value="#ff0080"
-            class="h-[42px] w-[51px] border border-solid rounded-md border-slate-400"
+            class="h-[42px] w-[51px] border border-solid rounded-md bg-slate-100 border-slate-400"
           />
           <select
             name="scheme-selection"
             id="scheme-selection"
-            class="h-[42px] w-[312px] border border-solid border-slate-400"
+            class="h-[42px] w-[312px] border border-solid border-slate-400 text-xs"
           >
             <option disabled selected>Select scheme</option>
             <option value="monochrome">Monochrome</option>
@@ -35,11 +37,37 @@
             <option value="triad">Triad</option>
           </select>
           <button
-            class="h-[42px] w-[123px] text-sm border border-slate-400 border-solid rounded-md"
+            class="h-[42px] w-[123px] text-xs border border-slate-400 border-solid rounded-md"
           >
             Get color scheme
           </button>
         </form>
+      </div>
+      <div class="grid grid grid-cols-5 grid-rows-2">
+        <div class="bg-red-400 w-[110px] h-[414px]"></div>
+        <div class="bg-green-400 w-[110px] h-[414px]"></div>
+        <div class="bg-purple-400 w-[110px] h-[414px]"></div>
+        <div class="bg-orange-400 w-[110px] h-[414px"></div>
+        <div class="bg-blue-400 w-[110px] h-[414px]"></div>
+        <div
+          class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
+        >asdasd
+      </div>
+        <div
+          class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
+        >asdasd
+      </div>
+        <div
+          class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
+        >asdasd
+      </div>
+        <div
+          class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
+        >asdasd
+      </div>
+        <div
+          class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
+        >asdasd
       </div>
     </div>
   </body>
