@@ -7,6 +7,27 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Color picker</title>
   </head>
-  <body></body>
+  <body>
+    <div class="w-[550px] h-[550px] bg-slate-300 mx-auto mt-56">
+      <div
+        class="h-[90px] w-[550px] bg-green-600 flex justify-center items-center"
+      >
+        <form id="color-picker" class="flex">
+          <input type="color" id="choosen-color" value="#ff0080" />
+          <select name="scheme-selection" id="scheme-selection">
+            <option disabled selected>Select scheme</option>
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <button>Get color scheme</button>
+        </form>
+      </div>
+    </div>
+  </body>
   <script src="/script.js"></script>
 </html>
