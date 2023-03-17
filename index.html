@@ -8,13 +8,23 @@
     <title>Color picker</title>
   </head>
   <body>
-    <div class="w-[550px] h-[550px] bg-slate-300 mx-auto mt-56">
-      <div
-        class="h-[90px] w-[550px] bg-green-600 flex justify-center items-center"
-      >
-        <form id="color-picker" class="flex">
-          <input type="color" id="choosen-color" value="#ff0080" />
-          <select name="scheme-selection" id="scheme-selection">
+    <div class="w-[550px] h-[550px] bg-slate-200 mx-auto mt-56">
+      <div class="h-[90px] w-[550px] grid">
+        <form
+          id="color-picker"
+          class="flex justify-around items-center bg-slate-100"
+        >
+          <input
+            type="color"
+            id="choosen-color"
+            value="#ff0080"
+            class="h-[42px] w-[51px] border border-solid rounded-md border-slate-400"
+          />
+          <select
+            name="scheme-selection"
+            id="scheme-selection"
+            class="h-[42px] w-[312px] border border-solid border-slate-400"
+          >
             <option disabled selected>Select scheme</option>
             <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome-dark</option>
@@ -24,7 +34,11 @@
             <option value="analogic-complement">Analogic-complement</option>
             <option value="triad">Triad</option>
           </select>
-          <button>Get color scheme</button>
+          <button
+            class="h-[42px] w-[123px] text-sm border border-slate-400 border-solid rounded-md"
+          >
+            Get color scheme
+          </button>
         </form>
       </div>
     </div>
