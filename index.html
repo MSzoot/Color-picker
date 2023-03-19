@@ -19,7 +19,6 @@
           <input
             type="color"
             id="choosen-color"
-            value="#ff0080"
             class="h-[42px] w-[51px] border border-solid rounded-md bg-slate-100 border-slate-400"
           />
           <select
@@ -27,7 +26,7 @@
             id="scheme-selection"
             class="h-[42px] w-[312px] border border-solid border-slate-400 text-xs"
           >
-            <option disabled selected>Select scheme</option>
+
             <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome-dark</option>
             <option value="monochrome-light">Monochrome-light</option>
@@ -38,36 +37,37 @@
           </select>
           <button
             class="h-[42px] w-[123px] text-xs border border-slate-400 border-solid rounded-md"
+            id="btn"
           >
             Get color scheme
           </button>
         </form>
       </div>
-      <div class="grid grid grid-cols-5 grid-rows-2">
-        <div class="bg-red-400 w-[110px] h-[414px]"></div>
-        <div class="bg-green-400 w-[110px] h-[414px]"></div>
-        <div class="bg-purple-400 w-[110px] h-[414px]"></div>
-        <div class="bg-orange-400 w-[110px] h-[414px"></div>
-        <div class="bg-blue-400 w-[110px] h-[414px]"></div>
+      <div class="grid grid-cols-5 grid-rows-2" id="colors-displayed">
+        <div class="bg-zinc-900 w-[110px] h-[414px]"></div>
+        <div class="bg-zinc-700 w-[110px] h-[414px]"></div>
+        <div class="bg-zinc-500 w-[110px] h-[414px]"></div>
+        <div class="bg-zinc-300 w-[110px] h-[414px"></div>
+        <div class="bg-zinc-100 w-[110px] h-[414px]"></div>
         <div
           class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
-        >asdasd
+        >zinc900
       </div>
         <div
           class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
-        >asdasd
+        >zinc700
       </div>
         <div
           class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
-        >asdasd
+        >zinc500
       </div>
         <div
           class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
-        >asdasd
+        >zinc300
       </div>
         <div
           class="bg-slate-100 w-[110px] h-[43px] flex items-center justify-center"
-        >asdasd
+        >zinc100
       </div>
     </div>
   </body>
